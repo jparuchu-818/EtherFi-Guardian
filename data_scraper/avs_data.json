@@ -1,0 +1,19 @@
+{
+  "avs": [
+    {
+      "name": "EigenLayer AVS: RestakeX",
+      "risk": "high",
+      "notes": "Early-stage AVS"
+    },
+    {
+      "name": "Lido Oracle",
+      "risk": "medium",
+      "notes": "Feeds staking rates"
+    }
+  ],
+  "oracles": [
+    "Chainlink ETH/USD"
+  ],
+  "bridges": [],
+  "fetched_at": "2025-11-08T23:44:39.400197Z"
+}

@@ -1,0 +1,68 @@
+{
+  "protocol": "EtherFi",
+  "product": "Liquid Restaking (eETH)",
+  "network": "Ethereum",
+  "last_updated": "2025-11-08T23:44:41.198632Z",
+  "security": {
+    "audits": [
+      {
+        "firm": "OpenZeppelin",
+        "date": "2024-04-22",
+        "scope": "Core smart contracts",
+        "report_url": "https://example.com/openzeppelin_audit.pdf",
+        "findings_summary": {
+          "critical": 0,
+          "high": 1,
+          "medium": 2,
+          "low": 3,
+          "informational": 5
+        },
+        "status": "addressed"
+      }
+    ],
+    "bug_bounty": {
+      "platform": "Immunefi",
+      "max_payout_usd": 500000,
+      "status": "active",
+      "url": "https://immunefi.com/bounty/etherfi/"
+    },
+    "security_notices": []
+  },
+  "compensation_policy": {
+    "insurance": {
+      "coverage_type": "self-insured pool",
+      "coverage_limit_usd": 2000000,
+      "exclusions": [
+        "validator slashings > pool cap",
+        "chain halts"
+      ],
+      "status": "limited"
+    },
+    "terms_of_use": {
+      "url": "https://docs.etherfi.money/insurance",
+      "withdrawal_pauses": "allowed under emergency",
+      "governance_control": "multi-sig + timelock"
+    },
+    "fetched_at": "2025-11-08T23:44:41.155588Z"
+  },
+  "dependencies": {
+    "avs": [
+      {
+        "name": "EigenLayer AVS: RestakeX",
+        "risk": "high",
+        "notes": "Early-stage AVS"
+      },
+      {
+        "name": "Lido Oracle",
+        "risk": "medium",
+        "notes": "Feeds staking rates"
+      }
+    ],
+    "oracles": [
+      "Chainlink ETH/USD"
+    ],
+    "bridges": []
+  },
+  "trust_score": {},
+  "ai_analysis": {}
+}

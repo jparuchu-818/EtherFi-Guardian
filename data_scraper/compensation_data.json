@@ -1,0 +1,17 @@
+{
+  "insurance": {
+    "coverage_type": "self-insured pool",
+    "coverage_limit_usd": 2000000,
+    "exclusions": [
+      "validator slashings > pool cap",
+      "chain halts"
+    ],
+    "status": "limited"
+  },
+  "terms_of_use": {
+    "url": "https://docs.etherfi.money/insurance",
+    "withdrawal_pauses": "allowed under emergency",
+    "governance_control": "multi-sig + timelock"
+  },
+  "fetched_at": "2025-11-08T23:44:41.155588Z"
+}

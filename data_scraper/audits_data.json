@@ -1,0 +1,26 @@
+{
+  "audits": [
+    {
+      "firm": "OpenZeppelin",
+      "date": "2024-04-22",
+      "scope": "Core smart contracts",
+      "report_url": "https://example.com/openzeppelin_audit.pdf",
+      "findings_summary": {
+        "critical": 0,
+        "high": 1,
+        "medium": 2,
+        "low": 3,
+        "informational": 5
+      },
+      "status": "addressed"
+    }
+  ],
+  "bug_bounty": {
+    "platform": "Immunefi",
+    "max_payout_usd": 500000,
+    "status": "active",
+    "url": "https://immunefi.com/bounty/etherfi/"
+  },
+  "security_notices": [],
+  "fetched_at": "2025-11-08T23:44:41.005542Z"
+}
