@@ -1,0 +1,25 @@
+{
+    "trustScore": 8.5,
+    "scoreBreakdown": {
+      "audit": {
+        "score": 4.5,
+        "summary": "EtherFi has been audited by Quantstamp and Trail of Bits with no critical issues found."
+      },
+      "dependency": {
+        "score": 2.5,
+        "summary": "EtherFi currently integrates with 8 Actively Validated Services (EigenDA, AltLayer, etc.), introducing moderate dependency risk."
+      },
+      "compensation": {
+        "score": 1.5,
+        "summary": "EtherFi Terms of Use indicate user-assumed risk and no explicit insurance or compensation fund."
+      }
+    },
+    "insightPanel": {
+      "summary": "Validator performance has remained consistent with 3–5% APY over recent periods."
+    },
+    "learningCorner": {
+      "avs": "An Actively Validated Service (AVS) is a network module that leverages staked ETH to perform secure tasks.",
+      "restaking": "Liquid restaking lets you reuse your staked ETH to earn extra rewards while maintaining liquidity."
+    }
+  }
+  
