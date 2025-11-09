@@ -1,7 +1,8 @@
-// This file handles API integration
-// For Phase 1, we use mock data. For Phase 2+, we'll connect to the real backend API
+// API Integration - Now connects to real backend!
 
-// Mock data embedded directly
+const BACKEND_URL = 'http://localhost:8000';
+
+// Mock data as fallback
 const mockResponse = {
   "trustScore": 8.5,
   "scoreBreakdown": {
@@ -28,23 +29,24 @@ const mockResponse = {
 };
 
 export async function fetchAnalysis() {
-  // Phase 1: Return mock data
-  // Simulate API delay
-  await new Promise(resolve => setTimeout(resolve, 500));
-  return mockResponse;
-
-  // Phase 2: Uncomment this to use real backend
-  /*
   try {
-    const response = await fetch('http://localhost:8000/api/v1/analyze');
+    console.log('🔄 Fetching from backend API...');
+    
+    const response = await fetch(`${BACKEND_URL}/api/v1/analyze`);
+    
     if (!response.ok) {
-      throw new Error('Failed to fetch analysis');
+      throw new Error(`API Error: ${response.status}`);
     }
-    return await response.json();
+    
+    const data = await response.json();
+    console.log('✅ Data received from backend:', data);
+    
+    return data;
   } catch (error) {
-    console.error('API Error:', error);
-    // Fallback to mock data if API fails
+    console.error('❌ Backend API Error:', error.message);
+    console.log('⚠️  Falling back to mock data');
+    
+    // Fallback to mock data if backend is unavailable
     return mockResponse;
   }
-  */
 }
