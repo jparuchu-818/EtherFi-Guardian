@@ -63,6 +63,26 @@
     ],
     "bridges": []
   },
-  "trust_score": {},
-  "ai_analysis": {}
+  "trust_score": {
+    "value": 5.0,
+    "scale": "1-10",
+    "rationale": "Moderate security posture with OpenZeppelin audit, but limited compensatory mechanisms and unconfirmed dependency safeguards"
+  },
+  "ai_analysis": {
+    "summary": "EtherFi shows initial security diligence via OpenZeppelin audit, but lacks comprehensive risk mitigation strategies. Dependency and compensation frameworks need substantial enhancement.",
+    "top_risks": [
+      "Unaddressed high-severity audit finding",
+      "No active bug bounty program",
+      "Immature AVS dependency risks",
+      "Absence of insurance/compensation policy"
+    ],
+    "quick_wins": [
+      "Launch Immunefi bug bounty program",
+      "Develop clear compensation guidelines",
+      "Implement protocol-level insurance",
+      "Enhance AVS risk management framework",
+      "Establish transparent upgrade governance"
+    ],
+    "generated_at": "2025-11-09T00:33:42+00:00"
+  }
 }
