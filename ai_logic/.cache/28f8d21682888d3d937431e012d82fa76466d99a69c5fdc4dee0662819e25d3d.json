@@ -1,0 +1,23 @@
+{
+  "trust_score": {
+    "value": 5.0,
+    "scale": "1-10",
+    "rationale": "Moderate security posture with OpenZeppelin audit, but limited risk mitigation mechanisms"
+  },
+  "ai_analysis": {
+    "summary": "EtherFi shows initial security diligence via OpenZeppelin audit, but lacks comprehensive risk management infrastructure like bug bounty and insurance.",
+    "top_risks": [
+      "Early-stage AVS dependencies",
+      "No active bug bounty program",
+      "Missing insurance coverage",
+      "Limited governance transparency"
+    ],
+    "quick_wins": [
+      "Launch Immunefi bug bounty",
+      "Implement protocol insurance",
+      "Publish detailed upgrade and governance processes",
+      "Conduct additional third-party security audits"
+    ],
+    "generated_at": "2024-04-22T12:00:00Z"
+  }
+}

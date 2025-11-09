@@ -4,8 +4,9 @@ import json, sys, pathlib, datetime, hashlib
 from typing import Any, Dict
 from dateutil.tz import tzutc
 
-from prompt_builder import build_prompt
-from claude_api import ask_claude
+from ai_logic.prompt_builder import build_prompt
+from ai_logic.claude_api import ask_claude
+
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 LIVE_PATH = ROOT / "backend" / "response_live.json"

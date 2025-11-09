@@ -1,8 +1,4 @@
 {
-  "protocol": "EtherFi",
-  "product": "Liquid Restaking (eETH)",
-  "network": "Ethereum",
-  "last_updated": "2025-11-08T23:44:41.198632Z",
   "security": {
     "audits": [
       {
@@ -26,7 +22,27 @@
       "status": "active",
       "url": "https://immunefi.com/bounty/etherfi/"
     },
-    "security_notices": []
+    "security_notices": [],
+    "fetched_at": "2025-11-08T23:44:41.005542Z"
+  },
+  "dependencies": {
+    "avs": [
+      {
+        "name": "EigenLayer AVS: RestakeX",
+        "risk": "high",
+        "notes": "Early-stage AVS"
+      },
+      {
+        "name": "Lido Oracle",
+        "risk": "medium",
+        "notes": "Feeds staking rates"
+      }
+    ],
+    "oracles": [
+      "Chainlink ETH/USD"
+    ],
+    "bridges": [],
+    "fetched_at": "2025-11-08T23:44:39.400197Z"
   },
   "compensation_policy": {
     "insurance": {
@@ -45,44 +61,25 @@
     },
     "fetched_at": "2025-11-08T23:44:41.155588Z"
   },
-  "dependencies": {
-    "avs": [
-      {
-        "name": "EigenLayer AVS: RestakeX",
-        "risk": "high",
-        "notes": "Early-stage AVS"
-      },
-      {
-        "name": "Lido Oracle",
-        "risk": "medium",
-        "notes": "Feeds staking rates"
-      }
-    ],
-    "oracles": [
-      "Chainlink ETH/USD"
-    ],
-    "bridges": []
-  },
   "trust_score": {
     "value": 5.0,
     "scale": "1-10",
-    "rationale": "Moderate security posture with OpenZeppelin audit, but limited compensatory mechanisms and unconfirmed dependency safeguards"
+    "rationale": "Moderate security posture with OpenZeppelin audit, but limited risk mitigation mechanisms"
   },
   "ai_analysis": {
-    "summary": "EtherFi shows initial security diligence via OpenZeppelin audit, but lacks comprehensive risk mitigation strategies. Dependency and compensation frameworks need substantial enhancement.",
+    "summary": "EtherFi shows initial security diligence via OpenZeppelin audit, but lacks comprehensive risk management infrastructure like bug bounty and insurance.",
     "top_risks": [
-      "Unaddressed high-severity audit finding",
+      "Early-stage AVS dependencies",
       "No active bug bounty program",
-      "Immature AVS dependency risks",
-      "Absence of insurance/compensation policy"
+      "Missing insurance coverage",
+      "Limited governance transparency"
     ],
     "quick_wins": [
-      "Launch Immunefi bug bounty program",
-      "Develop clear compensation guidelines",
-      "Implement protocol-level insurance",
-      "Enhance AVS risk management framework",
-      "Establish transparent upgrade governance"
+      "Launch Immunefi bug bounty",
+      "Implement protocol insurance",
+      "Publish detailed upgrade and governance processes",
+      "Conduct additional third-party security audits"
     ],
-    "generated_at": "2025-11-09T00:33:42+00:00"
+    "generated_at": "2025-11-09T01:42:00+00:00"
   }
 }
